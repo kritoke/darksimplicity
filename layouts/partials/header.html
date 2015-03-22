@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseUrl }}/css/style.min.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="navbar">
+        <ul class="navbar-list" style="float:right">
+          {{ range .Site.Menus.top }}
+          <li class="navbar-item"><a class="navbar-link" href="{{.Url}}">{{.Name}}</a></li>{{ end }}
+        </ul>
+    </div>
+    <div class="header"><span style="font-size: 34px;"><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></span>{{ if .Site.Params.description }}<span style="font-size:12px;">&nbsp;&nbsp;|<i>{{ .Site.Params.description }}</i> </span>{{end}}</div>

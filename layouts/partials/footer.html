@@ -1,0 +1,11 @@
+    <div class="navbar">
+        <ul class="navbar-list" style="float:right">{{ $currentNode := . }}{{ range .Site.Menus.main }}
+          <li class="navbar-item"><a class="navbar-link" href="{{.Url}}">{{.Name}}</a></li>{{ end }}
+        </ul>
+    </div>
+    <div class="copyright"><p>{{ with .Site.Params.copyright | safeHtml }}{{.}}{{ else }}&copy; {{.Now.Format "2006"}}. All rights reserved. {{end}}
+      </p>
+    </div>    {{ partial "google_analytics.html" . }}
+</div>
+</body>
+</html>

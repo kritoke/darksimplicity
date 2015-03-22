@@ -1,0 +1,6 @@
+author = "Matt Rhone"
+name = "darksimplicity"
+description = "A Dark Minimalist Theme Built Using Sass/Susy for Hugo."
+license = "MIT"
+source_repo = "http://github.com/kritoke/darksimplicity"
+tags = ["blog", "personal"]

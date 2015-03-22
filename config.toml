@@ -1,0 +1,18 @@
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+builddrafts = false
+canonifyurls = true
+baseurl=""
+title="Dark Simplicity"
+author="administrator"
+languageCode = "en-us"
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  #description = ""
+  #copyright=""
+  #google_analytics_id=""
+  #disqus_shortname=""
