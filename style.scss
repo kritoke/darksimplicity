@@ -1,0 +1,109 @@
+@import "normalize";
+@import "compass";
+@import "susy";
+@import url(http://fonts.googleapis.com/css?family=Lora);
+
+$linkHoverColor: #aeaeae;
+$linkActiveColor: #585858;
+$linkTextColor: #676767;
+$headerLinkTextColor: #fff;
+$textColor:#fff;
+$headlineTextColor:#676767;
+$susy: (
+  columns: 12,
+  container: 1120px,
+  global-box-sizing: border-box
+  );
+@include border-box-sizing;
+body {  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Lora", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background:#181818;color:$textColor;
+  }
+p, a:hover, .post-list-pagination{color:$textColor;}
+a:hover{text-decoration: underline;}
+.wrap {
+  @include container;
+}
+h1,h2,h3,h4,h5,h6 {color: $headlineTextColor;}
+.header, .navbar {@include span (12); }
+.header a{
+  text-decoration: none;
+  color: $headerLinkTextColor;
+  opacity: 1;
+  transition: opacity .55s ease-in-out;
+  -moz-transition: opacity .55s ease-in-out;
+  -webkit-transition: opacity .55s ease-in-out;
+}
+.header a.active{
+  color: $linkActiveColor; }
+.header a:hover{
+  opacity: 0.5;
+  }
+.header, .tags {color:#fff;font-weight:700;}
+a.navbar-link, a.post-title-link{font-weight:700;}
+.navbar-list {
+  list-style: none;
+  margin-bottom: 0;
+  }
+.navbar-item {
+  position: relative;
+  float: left;
+  margin-bottom: 0; }
+.navbar-link {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  letter-spacing: .2rem;
+  margin-right: 35px;
+  text-decoration: none;
+  color: $linkTextColor; }
+  .navbar-link.active {
+    color: $linkActiveColor; }
+  .navbar-link:hover {
+  color: $linkHoverColor;
+}
+.copyright{
+  @include span (12);
+  p{  font-size:small; color: #676767;}
+}
+.content-tags, .post-title {
+  @include span(8);
+  @media (max-width: 1119px) {padding-left: 10px;}
+}
+.content-full {
+  @include span(12);
+  @media (max-width: 1119px) {padding-left: 10px;}
+}
+.pagination{
+  @include span(12);
+  @media (max-width: 1119px) {padding-left: 10px;}
+  text-align:center;
+}
+.tags {
+  @include span(4 last);
+  border-left: 3px solid #808080;  padding-left: 8px; margin-top: 4px;
+  font-size:small;
+}
+.tags a {  font-size:small;}
+.tags a, .pagination a{
+  color: $linkTextColor;
+  text-decoration: none;
+}
+a.tag-link:hover, .pagination a:hover{
+color: $linkHoverColor;
+text-decoration: underline;
+}
+p { margin-top: 5px; }
+.empty {
+  @include span (12);
+}
+.post-title-link {
+font-weight: 700;
+font-size: 30px;
+color: $linkTextColor;
+text-decoration: none;
+ }
+.post-title-link:hover {
+color: $linkHoverColor;
+}
