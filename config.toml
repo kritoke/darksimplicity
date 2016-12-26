@@ -7,6 +7,7 @@ baseurl=""
 title="Dark Simplicity"
 author="administrator"
 languageCode = "en-us"
+min_version = 0.14
 
 [taxonomies]
   tag = "tags"

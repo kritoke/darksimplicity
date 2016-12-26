@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ .Site.LanguageCode | default "en-us" }}">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="darksimplicity">
+  {{ .Hugo.Generator }}
+  {{ with .Site.Params.name }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ with .Site.Params.role }}<meta name="description" content="{{ . }}">{{ end }}
+  <base href="{{ .Site.BaseURL }}">
   <title>{{ .Title }}</title>
-  <link rel="stylesheet" type="text/css" href="{{ .Site.BaseUrl }}/css/style.min.css">
+  <link rel="stylesheet" href="{{ "/css/style.min.css" | relURL }}">
 </head>
 <body>
   <div class="wrap">
     <div class="navbar">
         <ul class="navbar-list" style="float:right">
           {{ range .Site.Menus.top }}
-          <li class="navbar-item"><a class="navbar-link" href="{{.Url}}">{{.Name}}</a></li>{{ end }}
+          <li class="navbar-item"><a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
         </ul>
     </div>
-    <div class="header"><span style="font-size: 34px;"><a href="{{ .Site.BaseUrl }}">{{ .Site.Title }}</a></span>{{ if .Site.Params.description }}<span style="font-size:12px;">&nbsp;&nbsp;|<i>{{ .Site.Params.description }}</i> </span>{{end}}</div>
+    <div class="header"><span style="font-size: 34px;">
+      <a href="{{ .Site.BaseURL  }}">{{ .Site.Title }}</a></span>
+      {{ if .Site.Params.description }}<span style="font-size:12px;">&nbsp;&nbsp;|<i>{{ .Site.Params.description }}</i> </span>{{end}}</div>

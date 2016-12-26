@@ -1,8 +1,10 @@
-{{ partial "header.html" . }}{{ $baseurl := .Site.BaseUrl }}<div class="empty">&nbsp;</div>
+{{ partial "header.html" . }}
+<div class="empty">&nbsp;</div>
   <div class="post-title">
     <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
   </div>{{ if isset .Params "tags" }}
       <div class="tags">tags:</br>
-        {{ range  .Params.tags }}<a class="tag-link" href="{{ $baseurl }}/tags/{{ . | urlize }}">{{ . }} </a>{{ end }}
+        {{ range  .Params.tags }}<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }} </a>{{ end }}
     </div>{{ end }}
-    <div class="content-full">{{ .Content }}{{ partial "disqus.html" . }}</div>{{ partial "footer.html" . }}
+    <div class="content-full">{{ .Content }}{{ partial "disqus.html" . }}</div>
+    {{ partial "footer.html" . }}
