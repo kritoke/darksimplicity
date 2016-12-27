@@ -7,7 +7,7 @@ baseurl=""
 title="Dark Simplicity"
 author="administrator"
 languageCode = "en-us"
-min_version = 0.14
+min_version = 0.17
 
 [taxonomies]
   tag = "tags"
@@ -17,3 +17,20 @@ min_version = 0.14
   #copyright=""
   #google_analytics_id=""
   #disqus_shortname=""
+
+[[menu.top]]
+  name = "About"
+  pre = ""
+  weight = -110
+  identifier = "about"
+  url = "/about/"
+[[menu.top]]
+  name = "Twitter"
+  pre = ""
+  weight = -100
+  url = "http://www.twitter.com/Username"
+[[menu.top]]
+  name = "RSS"
+  pre = ""
+  weight = -90
+  url = "index.xml"

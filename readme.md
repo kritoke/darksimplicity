@@ -1,6 +1,6 @@
 # Dark Simplicity
 
-Dark Simplicity is a minimalist oriented theme with a dark color scheme for [Hugo](http://gohugo.io/).  
+Dark Simplicity is a minimalist oriented theme with a dark color scheme for [Hugo](http://gohugo.io/).
 
 ## Supports the following built-in functions from Hugo:
 
@@ -21,41 +21,4 @@ Dark Simplicity is a minimalist oriented theme with a dark color scheme for [Hug
 * Supports Google Analytics.
 * Supports Disqus Comments.
 
-Example Configuration (config.toml):
-
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-builddrafts = false
-canonifyurls = true
-baseurl=""
-theme="darksimplicity"
-title="Dark Simplicity"
-author="administrator"
-languageCode = "en-us"
-
-[taxonomies]
-  tag = "tags"
-
-[params]
-  description = "A Dark Minimalist Theme Built Using Sass/Susy for Hugo."
-  copyright="&copy; 2015 Matt Rhone. All rights reserved."
-  google_analytics_id="XX-XXXXXXXX-X"
-  disqus_shortname="sitename"
-
-[[menu.top]]
-  name = "About"
-  pre = ""
-  weight = -110
-  identifier = "about"
-  url = "/about/"
-[[menu.top]]
-  name = "Twitter"
-  pre = ""
-  weight = -100
-  url = "http://www.twitter.com/Username"
-[[menu.top]]
-  name = "RSS"
-  pre = ""
-  weight = -90
-  url = "index.xml"
+See config.toml file for example config.
