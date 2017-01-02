@@ -16,7 +16,7 @@ gulp.task('css', function() {
     .pipe(gulp.dest('dest'));
 });
 
-gulp.task('default', ['css']);
+gulp.task('default', ['css', 'watch']);
 
 gulp.task('watch', function() {
     gulp.watch('src/main.css', ['css'])
