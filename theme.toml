@@ -1,6 +1,13 @@
-author = "Matt Rhone"
-name = "darksimplicity"
-description = "A Dark Minimalist Theme for Hugo utilizing the Lost Grid Framework."
+name = "Dark Simplicity"
 license = "MIT"
+licenselink = "https://github.com/kritoke/darksimplicity/blob/master/LICENSE.md"
 source_repo = "http://github.com/kritoke/darksimplicity"
+description = "A Dark Minimalist Theme for Hugo utilizing the Lost Grid Framework."
+homepage = "http://github.com/kritoke/darksimplicity"
 tags = ["blog", "personal", "dark", "minimalist"]
+features = ["blog"]
+min_version = 0.18
+
+[author]
+    name = "Matt Rhone"
+    homepage = "http://matthewrhone.com"
