@@ -9,7 +9,9 @@
   {{ with .Site.Params.role }}<meta name="description" content="{{ . }}">{{ end }}
   <base href="{{ .Site.BaseURL }}">
   <title>{{ .Title }}</title>
+  <!-- <link rel="stylesheet" href="{{ "/css/style.min.css" | relURL }}"> -->
   <link rel="stylesheet" href="{{ "/css/style.min.css" | relURL }}">
+
 </head>
 <body>
   <div class="wrap">

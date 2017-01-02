@@ -1,32 +1,25 @@
-@import "normalize";
-@import "compass";
-@import "susy";
-@import url(http://fonts.googleapis.com/css?family=Lora);
-
+@lost flexbox flex;
+$codeTextColor: #866c6c;
 $linkHoverColor: #aeaeae;
 $linkActiveColor: #585858;
 $linkTextColor: #676767;
 $headerLinkTextColor: #fff;
+$copyrightTextColor: #676767;
 $textColor:#fff;
 $headlineTextColor:#676767;
-$susy: (
-  columns: 12,
-  container: 1120px,
-  global-box-sizing: border-box
-  );
-@include border-box-sizing;
 body {  line-height: 1.6;
   font-weight: 400;
   font-family: "Lora", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background:#181818;color:$textColor;
   }
-p, a:hover, .post-list-pagination{color:$textColor;}
+a:hover, .post-list-pagination{color:$textColor;}
 a:hover{text-decoration: underline;}
 .wrap {
-  @include container;
+  lost-center: 1140px 30px flex;
+  lost-utility: clearfix;
 }
 h1,h2,h3,h4,h5,h6 {color: $headlineTextColor;}
-.header, .navbar {@include span (12); }
+.header, .navbar { lost-column: 12/12;}
 .header a{
   text-decoration: none;
   color: $headerLinkTextColor;
@@ -42,6 +35,8 @@ h1,h2,h3,h4,h5,h6 {color: $headlineTextColor;}
   }
 .header, .tags {color:#fff;font-weight:700;}
 a.navbar-link, a.post-title-link{font-weight:700;}
+code {color: $codeTextColor;}
+a {color: $linkTextColor;}
 .navbar-list {
   list-style: none;
   margin-bottom: 0;
@@ -59,29 +54,26 @@ a.navbar-link, a.post-title-link{font-weight:700;}
   text-decoration: none;
   color: $linkTextColor; }
   .navbar-link.active {
-    color: $linkActiveColor; }
+  color: $linkActiveColor; }
   .navbar-link:hover {
   color: $linkHoverColor;
 }
 .copyright{
-  @include span (12);
-  p{  font-size:small; color: #676767;}
+  lost-column: 12/12;
+  font-size:small; color: $copyrightTextColor;
 }
 .content-tags, .post-title {
-  @include span(8);
-  @media (max-width: 1119px) {padding-left: 10px;}
+  lost-column: 8/12 0;
 }
 .content-full {
-  @include span(12);
-  @media (max-width: 1119px) {padding-left: 10px;}
+  lost-column: 12/12;
 }
 .pagination{
-  @include span(12);
-  @media (max-width: 1119px) {padding-left: 10px;}
+  lost-column: 12/12;
   text-align:center;
 }
 .tags {
-  @include span(4 last);
+  lost-column: 3/12;
   border-left: 3px solid #808080;  padding-left: 8px; margin-top: 4px;
   font-size:small;
 }
@@ -96,7 +88,7 @@ text-decoration: underline;
 }
 p { margin-top: 5px; }
 .empty {
-  @include span (12);
+  lost-column: 12/12;
 }
 .post-title-link {
 font-weight: 700;

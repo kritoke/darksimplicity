@@ -1,5 +1,5 @@
 {{ partial "header.html" . }}
-{{ range .Paginator.Pages }}{{ if eq .Type "post"}}
+{{ range (.Paginator 5).Pages }}{{ if eq .Type "post"}}
 <div class="empty">&nbsp;</div>
   <div class="post-title">
     <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>

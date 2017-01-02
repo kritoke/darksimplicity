@@ -1,6 +1,6 @@
 author = "Matt Rhone"
 name = "darksimplicity"
-description = "A Dark Minimalist Theme Built Using Sass/Susy for Hugo."
+description = "A Dark Minimalist Theme for Hugo utilizing the Lost Grid Framework."
 license = "MIT"
 source_repo = "http://github.com/kritoke/darksimplicity"
-tags = ["blog", "personal"]
+tags = ["blog", "personal", "dark", "minimalist"]
