@@ -22,12 +22,6 @@ tag = "tags"
 
 [menu]
   [[menu.top]]
-  name = "About"
-  pre = ""
-  weight = -110
-  identifier = "about"
-  url = "/about/"
-  [[menu.top]]
   name = "Twitter"
   pre = ""
   weight = -100
