@@ -1,10 +1,11 @@
 {{ partial "header.html" . }}
-<div class="empty">&nbsp;</div>
-  <div class="post-title">
-    <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
-  </div>{{ if isset .Params "tags" }}
-      <div class="tags">tags:</br>
-        {{ range  .Params.tags }}<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }} </a>{{ end }}
-    </div>{{ end }}
-    <div class="content-full">{{ .Content }}{{ partial "disqus.html" . }}</div>
-    {{ partial "footer.html" . }}
+  <article itemscope itemtype="http://schema.org/Blog">
+    <div class="post-title">
+      <a class="post-title-link" href="{{ .Permalink }}" itemprop="name">{{ .Title }}</a>
+    </div>{{ if isset .Params "tags" }}
+        <div class="tags">tags:</br>
+          <span itemprop="keywords">{{ range  .Params.tags }}<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }} </a>{{ end }}
+          </span>
+      </div>{{ end }}
+      <div class="content-full">{{ .Content }}{{ partial "disqus.html" . }}</div>
+{{ partial "footer.html" . }}

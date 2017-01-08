@@ -11,15 +11,16 @@ var gulp = require('gulp'),
 
 // apply PostCSS plugins
 gulp.task('css', function() {
-  return gulp.src('src/style.min.css')
-    .pipe(postcss([
+    var processors = [
       autoprefixer,
       //cssnano,
       lost,
       rucksack,
       fontmagician,
       simplevars
-    ]))
+    ]
+  return gulp.src('src/style.min.css')
+    .pipe(postcss(processors))
     .pipe(gulp.dest('../static/css'));
 });
 

@@ -7,7 +7,8 @@
       <a class="post-title-link" href="{{ .Permalink }}" itemprop="name">{{ .Title }}</a>
     </div>{{ if isset .Params "tags" }}
         <div class="tags">tags:</br>
-          <span itemprop="keywords">{{ range  .Params.tags }}<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }} </a>{{ end }}</span></div>
+          <span itemprop="keywords">{{ range  .Params.tags }}<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }} </a>{{ end }}
+          </span></div>
       <div class="content-tags"><p>{{.Summary}}</p></div>{{ else }}
       <div class="content-full"><p>{{.Summary}}</p></div>  {{ end }}
   </article>
