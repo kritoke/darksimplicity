@@ -51,13 +51,13 @@ h1,h2,h3,h4,h5,h6 {color: #676767;}
   .header a.title {  font-size: 34px;
   }
 }
-.header span.title-description {font-size: calc(15px + 4 * ((100vw - 420px) / 860));}
+.header span.title-description {font-size: calc(14px + 4 * ((100vw - 420px) / 860));}
 @media screen and (min-width: 1280px) {
-  .header span.title-description {  font-size: 19px;
+  .header span.title-description {  font-size: 18px;
   }
 }
 @media screen and (max-width: 420px) {
-  .header span.title-description {  font-size: 15px;
+  .header span.title-description {  font-size: 14px;
   }
 }
 a.navbar-link, a.post-title-link{font-weight:700;}
