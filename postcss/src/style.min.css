@@ -15,8 +15,7 @@ body {  line-height: 1.6;
 a:hover, .post-list-pagination{color:$textColor;}
 a:hover{text-decoration: underline;}
 .wrap {
-  lost-center: 1140px 30px flex;
-  lost-utility: clearfix;
+  lost-center: 80% flex;
 }
 h1,h2,h3,h4,h5,h6 {color: $headlineTextColor;}
 .header, .navbar { lost-column: 12/12;}
@@ -63,17 +62,17 @@ a {color: $linkTextColor;}
   font-size:small; color: $copyrightTextColor;
 }
 .content-tags, .post-title {
-  lost-column: 8/12 0;
+  lost-column: 7/12 0;
 }
 .content-full {
-  lost-column: 12/12;
+  lost-column: 1;
 }
 .pagination{
   lost-column: 12/12;
   text-align:center;
 }
 .tags {
-  lost-column: 3/12 0;
+  lost-column: 2/12;
   border-left: 3px solid #808080;  padding-left: 8px; margin-top: 4px;
   font-size:small;
 }
@@ -86,7 +85,8 @@ a.tag-link:hover, .pagination a:hover{
 color: $linkHoverColor;
 text-decoration: underline;
 }
-p { margin-top: 5px; }
+p { margin-top: 5px; 
+font-size: responsive;}
 .empty {
   lost-column: 12/12;
 }
