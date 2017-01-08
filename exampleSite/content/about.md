@@ -1,5 +1,5 @@
 +++
-title = "About Dark Simplicity"
+title = "About"
 description = "Info about dark simplicity theme."
 slug = "about"
 menu = "top"

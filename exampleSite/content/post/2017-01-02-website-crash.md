@@ -1,7 +1,7 @@
 +++
 title = "How to Make Your Website Crash in 15 Minutes"
 description = "How to crash a website quickly."
-date = "2016-12-30"
+date = "2017-01-02"
 tags = ["latin", "website crash"]
 slug = "website-crash"
 +++
