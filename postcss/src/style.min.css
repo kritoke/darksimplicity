@@ -132,3 +132,6 @@ p { margin-top: 5px;
 article {
   lost-center: 100% flex;
 }
+ul {
+  font-size: responsive;
+}
