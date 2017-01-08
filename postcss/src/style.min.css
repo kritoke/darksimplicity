@@ -132,3 +132,6 @@ p { margin-top: 5px;
 .post-title-link:hover {
   color: $linkHoverColor;
 }
+article {
+  lost-center: 100% flex;
+}
