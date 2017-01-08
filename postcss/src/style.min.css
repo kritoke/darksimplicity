@@ -59,8 +59,10 @@ a {color: $linkTextColor;}
 }
 .copyright{
   lost-column: 12/12;
-  font-size:small; color: $copyrightTextColor;
+  color: $copyrightTextColor;
 }
+.copyright p {
+  font-size: responsive 12px 15px;}
 .content-tags, .post-title {
   lost-column: 7/12 0;
 }
@@ -70,6 +72,7 @@ a {color: $linkTextColor;}
 .pagination{
   lost-column: 12/12;
   text-align:center;
+  font-size: responsive 16px 19px;
 }
 .tags {
   lost-column: 2/12;
@@ -86,13 +89,13 @@ color: $linkHoverColor;
 text-decoration: underline;
 }
 p { margin-top: 5px; 
-font-size: responsive;}
+font-size: responsive 16px 21px;}
 .empty {
   lost-column: 12/12;
 }
 .post-title-link {
 font-weight: 700;
-font-size: 30px;
+font-size: responsive 30px 36px;;
 color: $linkTextColor;
 text-decoration: none;
  }
