@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 gulp.task('css', function() {
     var processors = [
       autoprefixer,
-      //cssnano,
+      cssnano,
       lost,
       rucksack,
       fontmagician,
