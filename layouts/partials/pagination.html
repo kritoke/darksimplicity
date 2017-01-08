@@ -1,5 +1,4 @@
 {{ if or ((.Paginator 5).HasNext) ((.Paginator 5).HasPrev) }}
-<div class="empty">&nbsp;</div>
 <div class="pagination">
   <nav role="pagination" class="post-list-pagination">
       {{ if .Paginator.HasPrev }}

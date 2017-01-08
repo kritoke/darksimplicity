@@ -283,23 +283,6 @@ p { margin-top: 5px;
     font-size: 16px;
   }
 }
-.empty {
-  flex-grow: 0;
-  flex-shrink: 0;
-  flex-basis: calc(99.9% * 1 - (30px - 30px * 1));
-  width: calc(99.9% * 1 - (30px - 30px * 1));
-}
-.empty:nth-child(1n) {
-  margin-right: 30px;
-  margin-left: 0;
-}
-.empty:last-child {
-  margin-right: 0;
-}
-.empty:nth-child(undefinedn) {
-  margin-right: 0;
-  margin-left: auto;
-}
 .post-title-link {
   font-weight: 700;
   font-size: calc(30px + 6 * ((100vw - 420px) / 860));;

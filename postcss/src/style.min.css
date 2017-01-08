@@ -120,9 +120,6 @@ a.tag-link:hover, .pagination a:hover{
 p { margin-top: 5px; 
   font-size: responsive 16px 21px;
 }
-.empty {
-  lost-column: 1;
-}
 .post-title-link {
   font-weight: 700;
   font-size: responsive 30px 36px;;
