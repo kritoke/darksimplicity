@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     cssnano = require('cssnano'),
     autoprefixer = require('autoprefixer')({}),
     watch = require('gulp-watch'),
+    notify = require('gulp-notify'),
     rucksack = require('rucksack-css'),
     simplevars = require('postcss-simple-vars'),
     fontmagician = require('postcss-font-magician')({protocol: 'https:'}),
@@ -21,11 +22,12 @@ gulp.task('css', function() {
     ]
   return gulp.src('src/style.min.css')
     .pipe(postcss(processors))
-    .pipe(gulp.dest('../static/css'));
+    .pipe(gulp.dest('../static/css'))
+    .pipe(notify({ message: 'Post CSS processing task complete' }));
 });
 
 gulp.task('default', ['css', 'watch']);
 
 gulp.task('watch', function() {
-    gulp.watch('src/main.css', ['css'])
+    gulp.watch('src/*.css', ['css'])
 });
