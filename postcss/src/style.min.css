@@ -33,6 +33,8 @@ h1,h2,h3,h4,h5,h6 {color: $headlineTextColor;}
   opacity: 0.5;
   }
 .header, .tags {color:#fff;font-weight:700;}
+.header a.title {font-size: responsive 34px 38 px;}
+.header span.title-description {font-size: responsive 15px 19px;}
 a.navbar-link, a.post-title-link{font-weight:700;}
 code {color: $codeTextColor;}
 a {color: $linkTextColor;}

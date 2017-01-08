@@ -24,6 +24,6 @@
           <li class="navbar-item"><a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
         </ul>
     </div>
-    <div class="header"><span style="font-size: 34px;">
-      <a href="{{ .Site.BaseURL  }}">{{ .Site.Title }}</a></span>
-      {{ if .Site.Params.description }}<span style="font-size:12px;">&nbsp;&nbsp;|&nbsp;&nbsp;<i>{{ .Site.Params.description }}</i> </span>{{end}}</div>
+    <div class="header">
+      <a href="{{ .Site.BaseURL  }}" class="title">{{ .Site.Title }}</a>
+      {{ if .Site.Params.description }}<span class="title-description">&nbsp;&nbsp;|&nbsp;&nbsp;<i>{{ .Site.Params.description }}</i> </span>{{end}}</div>

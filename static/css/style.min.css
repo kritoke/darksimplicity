@@ -42,6 +42,24 @@ h1,h2,h3,h4,h5,h6 {color: #676767;}
   opacity: 0.5;
   }
 .header, .tags {color:#fff;font-weight:700;}
+.header a.title {font-size: calc(34px + 4 * ((100vw - 420px) / 860));}
+@media screen and (min-width: 1280px) {
+  .header a.title {  font-size: 38;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header a.title {  font-size: 34px;
+  }
+}
+.header span.title-description {font-size: calc(15px + 4 * ((100vw - 420px) / 860));}
+@media screen and (min-width: 1280px) {
+  .header span.title-description {  font-size: 19px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .header span.title-description {  font-size: 15px;
+  }
+}
 a.navbar-link, a.post-title-link{font-weight:700;}
 code {color: #866c6c;}
 a {color: #676767;}
