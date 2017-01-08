@@ -12,18 +12,18 @@
   {{ with .Site.Params.role }}<meta name="description" content="{{ . }}">{{ end }}
   <base href="{{ .Site.BaseURL }}">
   <title>{{ .Title }}</title>
-  <!-- <link rel="stylesheet" href="{{ "/css/style.min.css" | relURL }}"> -->
   <link rel="stylesheet" href="{{ "/css/style.min.css" | relURL }}">
 
 </head>
 <body>
   <div class="wrap">
     <div class="navbar">
-        <ul class="navbar-list" style="float:right">
+        <ul class="navbar-list">
           {{ range .Site.Menus.top }}
           <li class="navbar-item"><a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}
         </ul>
     </div>
     <div class="header">
       <a href="{{ .Site.BaseURL  }}" class="title">{{ .Site.Title }}</a>
-      {{ if .Site.Params.description }}<span class="title-description">&nbsp;&nbsp;|&nbsp;&nbsp;<i>{{ .Site.Params.description }}</i> </span>{{end}}</div>
+      {{ if .Site.Params.description }}<span class="title-description">&nbsp;&nbsp;|&nbsp;&nbsp;<i>{{ .Site.Params.description }}</i> </span>{{end}}
+    </div>

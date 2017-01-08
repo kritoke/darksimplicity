@@ -2,16 +2,15 @@
 {{ partial "header.html" . }}
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
 {{ range $paginator.Pages }}
-  <article itemscope itemtype="http://schema.org/Blog">
     <div class="post-title">
-      <a class="post-title-link" href="{{ .Permalink }}" itemprop="name">{{ .Title }}</a>
-    </div>{{ if isset .Params "tags" }}
+      <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
+    </div>
+    {{ if isset .Params "tags" }}
         <div class="tags">tags:</br>
-          <span itemprop="keywords">{{ range  .Params.tags }}<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }} </a>{{ end }}
-          </span></div>
+          {{ range  .Params.tags }}<a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }} </a>
+          {{ end }}</div>
       <div class="content-tags"><p>{{.Summary}}</p></div>{{ else }}
       <div class="content-full"><p>{{.Summary}}</p></div>  {{ end }}
-  </article>
   {{ end }}
 {{ partial "pagination.html" . }}
 {{ partial "footer.html" . }}

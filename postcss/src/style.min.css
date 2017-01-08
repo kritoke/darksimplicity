@@ -1,5 +1,4 @@
 @lost flexbox flex;
-@lost cycle none;
 $codeTextColor: #866c6c;
 $linkHoverColor: #aeaeae;
 $linkActiveColor: #585858;
@@ -48,7 +47,7 @@ h1,h2,h3,h4,h5,h6 {
   color:#fff;font-weight:700;
 }
 .header a.title {
-  font-size: responsive 34px 38px;
+  font-size: responsive 34px 50px;
 }
 .header span.title-description {
   font-size: responsive 14px 18px;
@@ -65,6 +64,7 @@ a {
 .navbar-list {
   list-style: none;
   margin-bottom: 0;
+  float: right;
 }
 .navbar-item {
   position: relative;
@@ -93,7 +93,8 @@ a {
 .copyright p, .tags a, .tags {
   font-size: responsive 12px 15px;}
 .content-tags, .post-title {
-  lost-column: 7/12 0;
+  lost-column: 9/12 0 flex;
+  width: 100%;
 }
 .content-full {
   lost-column: 1;
@@ -104,7 +105,8 @@ a {
   font-size: responsive 16px 19px;
 }
 .tags {
-  lost-column: 2/12;
+  lost-column: 2/12 0 flex;
+  width: 100%;
   border-left: 3px solid #808080;  padding-left: 8px; margin-top: 4px;
 }
 .tags a, .pagination a{
