@@ -1,6 +1,5 @@
-
 {{ partial "header.html" . }}
-{{ $paginator := .Paginate (where .Data.Pages "Type" "post") 5 }}
+{{ $paginator := .Paginate ( where .Data.Pages "Type" "in" (or "posts" "post")) 5 }}
 {{ range $paginator.Pages }}
     <div class="post-title">
       <a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a>
