@@ -135,3 +135,6 @@ article {
 ul {
   font-size: responsive;
 }
+body img {
+  max-width: 100%;
+}
