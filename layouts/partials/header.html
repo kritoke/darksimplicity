@@ -25,9 +25,7 @@
       </nav>
       <br />
       <h1><a href="{{ .Site.BaseURL  }}" class="title">{{ .Site.Title }}</a>
-        {{ if .Site.Params.description }}
-          <span class="title-description">&nbsp;&nbsp;|&nbsp;&nbsp;<i>{{ .Site.Params.description }}</i>
-          </span>
-        {{end}}
+        {{ if .Site.Params.description }}<span class="title-description">&nbsp;&nbsp;|&nbsp;&nbsp;<i>{{ .Site.Params.description }}</i>
+          </span>{{end}}
       </h1>
   </header>

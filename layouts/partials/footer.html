@@ -1,7 +1,5 @@
   <footer>
-      <div class="copyright"><p>{{ with .Site.Copyright | safeHTML }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. {{ .Site.Title }}. All rights reserved. {{end}}
-        </p>
-      </div>    {{ partial "google_analytics.html" . }}
+      <div class="copyright"><p>{{ with .Site.Copyright | safeHTML }}{{.}}{{ else }}&copy; {{ now.Format "2006"}}. {{ .Site.Title }}. All rights reserved. {{end}}</div>    {{ partial "google_analytics.html" . }}
   </footer>
 </body>
 </html>

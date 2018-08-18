@@ -1,17 +1,13 @@
-{{ partial "header.html" . }}
+{{ partial "header.html" . }} 
 {{ $paginator := .Paginate ( where .Data.Pages "Type" "in" (or "posts" "post")) 5 }}
-{{ range $paginator.Pages }}
-<section>
-    <h3><a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a></h3>
-  {{ if isset .Params "tags" }}
-      <div class="tags">tags: &nbsp;
-        {{ range  .Params.tags }}
-          <a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }} </a>
-        {{ end }}
-      </div>
-  {{ end }}
+{{ range $paginator.Pages }}<section>
+      <h3><a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a></h3>{{ if isset .Params "tags" }}
+        <div class="tags">tags: &nbsp;{{ range  .Params.tags }}
+            <a class="tag-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" rel="tag">{{ . }} </a>{{ end }}
+        </div>{{ end }}
         <div class="content"><p>{{.Summary}}</p></div>
-</section>
+  </section>
+
 {{ end }}
 {{ partial "pagination.html" . }}
 {{ partial "footer.html" . }}
