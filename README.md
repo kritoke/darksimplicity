@@ -15,7 +15,7 @@ Dark Simplicity is a minimalist oriented theme with a dark color scheme for [Hug
 * disqus_shortname, put your shortname for your disqus account if you use it.
 
 ## Notable Features
-* Utilizes PostCSS Plugins including Lost, Font Magician, and CSSNano for Generating the CSS and Grid. Includes the original gulp config and css files so you can make modifications using the variables for easily changing colors used.
+* Utilizes PostCSS Plugins including Font Magician, and CSSNano for Generating the CSS and Grid. Includes the original gulp config and css files so you can make modifications using the variables for easily changing colors used.
 * Uses some Google fonts.
 * Uses Rusksack to generate responsive font sizes.
 * Minimalist look and feel.

@@ -2,7 +2,7 @@ languageCode = "en-us"
 title = "Dark Simplicity"
 baseurl = "http://example.org/"
 theme = "darksimplicity"
-min_version = 0.18
+min_version = 0.46
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
@@ -11,8 +11,8 @@ canonifyurls = true
 
 
 [params]
-description = "A Dark Minimalist Theme for Hugo utilizing the Lost Grid Framework"
-copyright = "&copy Copyright 2017. Matt Rhone and Dark Simplicity."
+description = "A Dark Minimalist Theme for Hugo"
+copyright = "&copy Copyright 2018. Matt Rhone and Dark Simplicity."
 #google_analytics_id=""
 #disqus_shortname=""
 
