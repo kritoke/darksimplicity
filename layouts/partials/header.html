@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-      <nav>
+      <nav role="top-nav">
           <ul class="navbar-list">
             {{ range .Site.Menus.top }}
             <li class="navbar-item"><a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a></li>{{ end }}

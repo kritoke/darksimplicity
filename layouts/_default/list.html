@@ -1,6 +1,5 @@
 {{ partial "header.html" . }}
-{{ $paginator := .Paginate ( where .Data.Pages "Type" "in" (or "posts" "post")) 5 }}
-{{ range $paginator.Pages }}
+<main> {{ $paginator := .Paginate ( where .Data.Pages "Type" "in" (or "posts" "post")) 5 }}{{ range $paginator.Pages }}
   <section>
     <h3><a class="post-title-link" href="{{ .Permalink }}">{{ .Title }}</a></h3>{{ if isset .Params "tags" }}
         <div class="tags">tags: &nbsp;{{ range  .Params.tags }}
@@ -10,6 +9,6 @@
     <div class="content">
       <p>{{.Summary}}</p>
     </div>
-  </section>
-{{ end }}
-    {{ partial "pagination.html" . }}{{ partial "footer.html" . }}
+  </section>{{ end }}
+    {{ partial "pagination.html" . }}</main>
+    {{ partial "footer.html" . }}
