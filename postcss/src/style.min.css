@@ -7,117 +7,158 @@ $copyrightTextColor: #676767;
 $textColor:#fff;
 $headlineTextColor:#676767;
 body {
-  /* line-height: 1.6; */
-  font-weight: 400;
-  font-family: "Lora", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background:#181818;
-  color:$textColor;
+    /* line-height: 1.6; */
+    font-weight: 400;
+    font-family: "Lora", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #181818;
+    color: $textColor;
 }
 
-a:hover, .post-list-pagination{
-  color:$textColor;
+a:hover,
+.post-list-pagination {
+    color: $textColor;
 }
-a:hover{
-  text-decoration: underline;
+
+a:hover {
+    text-decoration: underline;
 }
+
 p {
-  max-width: 38em;
+    max-width: 38em;
 }
+
 code {
-  color: $codeTextColor;
+    color: $codeTextColor;
 }
+
 a {
-  color: $linkTextColor;
+    color: $linkTextColor;
 }
-h1,h2,h3,h4,h5,h6 {
-  color: $headlineTextColor;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $headlineTextColor;
 }
-header h1 a{
-  text-decoration: none;
-  color: $headerLinkTextColor;
-  opacity: 1;
-  transition: opacity .55s ease-in-out;
-  -moz-transition: opacity .55s ease-in-out;
-  -webkit-transition: opacity .55s ease-in-out;
+
+header h1 a {
+    text-decoration: none;
+    color: $headerLinkTextColor;
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
 }
-header h1 a.active{
-  color: $linkActiveColor; 
+
+header h1 a.active {
+    color: $linkActiveColor;
 }
-header h1 a:hover{
-  opacity: 0.5;
-  }
-header, .tags {
-  color:#fff;
-  font-weight:700;
+
+header h1 a:hover {
+    opacity: 0.5;
 }
+
+header,
+.tags {
+    color: #fff;
+    font-weight: 700;
+}
+
 header h1 a.title {
-  font-size: responsive 34px 50px;
+    font-size: responsive 34px 50px;
 }
+
 header h1 span.title-description {
-  font-size: responsive 14px 18px;
-  color: $headlineTextColor;
+    font-size: responsive 14px 18px;
+    color: $headlineTextColor;
 }
-a.navbar-link, a.post-title-link{
-  font-weight:700;
+
+a.navbar-link,
+a.post-title-link {
+    font-weight: 700;
 }
+
 .navbar-list {
-  list-style: none;
-  margin-bottom: 0;
-  float: right;
+    list-style: none;
+    margin-bottom: 0;
+    float: right;
 }
+
 .navbar-item {
-  position: relative;
-  float: left;
-  margin-bottom: 0; 
+    position: relative;
+    float: left;
+    margin-bottom: 0;
 }
+
 .navbar-link {
-  text-transform: uppercase;
-  font-size: responsive 30em 19em;
-  font-weight: 900;
-  letter-spacing: .2rem;
-  margin-right: 35px;
-  text-decoration: none;
-  color: $linkTextColor; 
+    text-transform: uppercase;
+    font-size: responsive;
+    font-weight: 900;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    color: $linkTextColor;
 }
+
 .navbar-link.active {
-  color: $linkActiveColor; 
+    color: $linkActiveColor;
 }
+
 .navbar-link:hover {
-  color: $linkHoverColor;
+    color: $linkHoverColor;
 }
-.copyright{
-  color: $copyrightTextColor;
+
+.tags a,
+.pagination a {
+    color: $linkTextColor;
+    text-decoration: none;
 }
-.copyright p, .tags a, .tags {
-  font-size: responsive 12px 15px;
+
+.tags {
+    margin-top: -20px;
 }
-.pagination{
-  text-align:center;
-  font-size: responsive 16px 19px;
+
+a.tag-link:hover,
+.pagination a:hover {
+    color: $linkHoverColor;
+    text-decoration: underline;
 }
-.tags a, .pagination a{
-  color: $linkTextColor;
-  text-decoration: none;
+
+p {
+    margin-top: 5px;
+    font-size: responsive 16px 21px;
 }
-a.tag-link:hover, .pagination a:hover{
-  color: $linkHoverColor;
-  text-decoration: underline;
-}
-p { margin-top: 5px; 
-  font-size: responsive 16px 21px;
-}
+
 .post-title-link {
-  font-weight: 700;
-  font-size: responsive 30px 36px;;
-  color: $linkTextColor;
-  text-decoration: none;
- }
-.post-title-link:hover {
-  color: $linkHoverColor;
+    font-weight: 700;
+    font-size: responsive 30px 36px;
+    ;
+    color: $linkTextColor;
+    text-decoration: none;
 }
-/* ul {
-  font-size: responsive;
-} */
+
+.post-title-link:hover {
+    color: $linkHoverColor;
+}
+
+.copyright {
+    color: $copyrightTextColor;
+}
+
+.copyright p,
+.tags a,
+.tags {
+    font-size: responsive 12px 15px;
+}
+
+.pagination {
+    text-align: center;
+    font-size: responsive 16px 19px;
+}
+
 body img {
-  max-width: 100%;
+    max-width: 100%;
 }
