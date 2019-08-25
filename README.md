@@ -13,6 +13,7 @@ Dark Simplicity is a minimalist oriented theme with a dark color scheme for [Hug
 * description, puts a tagline like this: | sample tag line
 * google_analytics_id, put your google analytics id if you use it.
 * disqus_shortname, put your shortname for your disqus account if you use it.
+* mainSections, sets what shows up in rss and index pages.
 
 ## Notable Features
 * Utilizes PostCSS Plugins including Font Magician, and CSSNano for Generating the CSS and Grid. Includes the original gulp config and css files so you can make modifications using the variables for easily changing colors used.

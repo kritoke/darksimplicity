@@ -2,20 +2,19 @@ languageCode = "en-us"
 title = "Dark Simplicity"
 baseurl = "http://example.org/"
 theme = "darksimplicity"
-min_version = 0.46
+min_version = 0.57
 contentdir = "content"
 layoutdir = "layouts"
 publishdir = "public"
 builddrafts = false
 canonifyurls = true
 
-
 [params]
 description = "A Dark Minimalist Theme for Hugo"
-copyright = "&copy Copyright 2018. Matt Rhone and Dark Simplicity."
+copyright = "&copy Copyright 2017-2019. Matt Rhone and Dark Simplicity."
+mainSections = ["posts"]
 #google_analytics_id=""
 #disqus_shortname=""
-
 
 [taxonomies]
 tag = "tags"

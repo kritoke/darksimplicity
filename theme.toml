@@ -5,7 +5,7 @@ description = "A Dark Minimalist Theme for Hugo utilizing the Lost Grid Framewor
 homepage = "http://github.com/kritoke/darksimplicity"
 tags = ["blog", "dark", "minimalist"]
 features = ["blog"]
-min_version = 0.18
+min_version = 0.57
 
 [author]
     name = "Matt Rhone"
