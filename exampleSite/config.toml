@@ -12,7 +12,7 @@ canonifyurls = true
 [params]
 description = "A Dark Minimalist Theme for Hugo"
 copyright = "&copy Copyright 2017-2019. Matt Rhone and Dark Simplicity."
-mainSections = ["posts"]
+mainSections = ["post"]
 #google_analytics_id=""
 #disqus_shortname=""
 
